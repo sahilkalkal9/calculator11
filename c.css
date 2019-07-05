@@ -1,0 +1,13 @@
+body
+{
+	background-image: url("evening.jpg");
+	position: fixed;
+
+
+}
+#calculator
+{
+	margin-top: 20%;
+	margin-left: 40%;
+	position: fixed;
+}
