@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="c.css">		
+</head>
+<body>
+	<div id="whole">
+	<form id="calculator" align="center">
+	<input type="display" name="display" placeholder="0" readonly>
+	<input class="btn btn-danger" type="button" name="button" value="AC" onclick="calculator.display.value =''"><br>
+	<div class="row">
+	<div class="btn-group">
+
+	<input class="btn btn-default" type="button" name="button" value="1" onclick="calculator.display.value +='1'">
+
+	<input class="btn btn-default" type="button" name="button" value="2" onclick="calculator.display.value +='2'">
+
+
+<input class="btn btn-default" type="button" name="button" value="3" onclick="calculator.display.value +='3'">
+
+
+<input class="btn btn-default" type="button" name="button" value="+" onclick="calculator.display.value +='+'">
+</div>
+</div><br>
+<div class="row">
+<div class="btn-group">
+
+<input class="btn btn-default" type="button" name="button" value="4" onclick="calculator.display.value +='4'">
+
+<input class="btn btn-default" type="button" name="button" value="5" onclick="calculator.display.value +='5'">
+
+<input class="btn btn-default" type="button" name="button" value="6" onclick="calculator.display.value +='6'">
+
+<input class="btn btn-default" type="button" name="button" value="-" onclick="calculator.display.value +='-'">
+</div>
+</div><br>
+<div class="row">
+<div class="btn-group">
+
+<input class="btn btn-default" type="button" name="button" value="7" onclick="calculator.display.value +='7'">
+
+<input class="btn btn-default" type="button" name="button" value="8" onclick="calculator.display.value +='8'">
+
+<input class="btn btn-default" type="button" name="button" value="9" onclick="calculator.display.value +='9'">
+
+<input class="btn btn-default" type="button" name="button" value="*" onclick="calculator.display.value +='*'">
+</div>
+</div><br>
+<div class="row">
+<div class="btn-group">
+
+<input class="btn btn-default" type="button" name="button" value="." onclick="calculator.display.value +='.'">
+
+<input class="btn btn-default" type="button" name="button" value="0" onclick="calculator.display.value +='0'">
+
+<input class="btn btn-default" type="button" name="button" value="/" onclick="calculator.display.value +='/'">
+
+<input class="btn btn-success" type="button" name="button" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+</div>
+</div><br>
+<div class="row">
+<div class="btn-group">
+
+<input class="btn btn-default" type="button" name="button" value="(" onclick="calculator.display.value +='('">
+
+<input class="btn btn-default" type="button" name="button" value=")" onclick="calculator.display.value +=')'">
+
+<input class="btn btn-default" type="button" name="button" value="%" onclick="calculator.display.value +='%'">
+</div>
+<input class="btn btn-warning" type="button" name="button" value="BACKSPACE" OnClick="calculator.display.value = calculator.display.value.substring(0, calculator.display.value.length - 1)">
+</div>
+</form>
+</div>
+
+</body>
+</html>
