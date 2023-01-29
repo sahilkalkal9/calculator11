@@ -1,6 +1,6 @@
 body
 {
-	background-image: url("evening.jpg");
+
 	position: fixed;
 
 
@@ -9,5 +9,4 @@ body
 {
 	margin-top: 20%;
 	margin-left: 40%;
-	position: fixed;
 }
